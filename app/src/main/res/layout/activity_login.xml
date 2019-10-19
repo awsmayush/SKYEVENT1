@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FAD22F"
+    android:layout_centerInParent="true"
+    android:id="@+id/l2"
+    android:layout_marginTop="0dp"
+    tools:context=".login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="enter email here..."
+            android:id="@+id/et1"
+            android:inputType="textEmailAddress"
+            android:textSize="30dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="enter password here..."
+            android:id="@+id/et2"
+            android:inputType="textPassword"
+            android:textSize="30dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent"
+            android:layout_weight="1"
+            android:id="@+id/b1"
+            android:onClick="login"
+            android:text="login"/>
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent"
+            android:id="@+id/b2"
+            android:layout_weight="1"
+            android:onClick="register"
+            android:text="Register"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/eve"/>
+        //android:background="@color/colorPrimaryDark"
+    </LinearLayout>
+
+</LinearLayout>
